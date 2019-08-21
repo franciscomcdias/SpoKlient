@@ -1,7 +1,7 @@
 from faker import Faker
 import settings
-from office365.runtime.auth.authentication_context import AuthenticationContext
-from office365.sharepoint.client_context import ClientContext
+from spoklient.runtime.auth.authentication_context import AuthenticationContext
+from spoklient.sharepoint.client_context import ClientContext
 
 
 def generate_tasks(context):

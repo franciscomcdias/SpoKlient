@@ -1,11 +1,11 @@
 import os
 
-from office365.sharepoint.caml_query import CamlQuery
+from spoklient.sharepoint.caml_query import CamlQuery
 from settings import settings
-from office365.runtime.auth.authentication_context import AuthenticationContext
-from office365.sharepoint.client_context import ClientContext
-from office365.sharepoint.file import File
-from office365.sharepoint.file_creation_information import FileCreationInformation
+from spoklient.runtime.auth.authentication_context import AuthenticationContext
+from spoklient.sharepoint.client_context import ClientContext
+from spoklient.sharepoint.file import File
+from spoklient.sharepoint.file_creation_information import FileCreationInformation
 
 
 def read_folder_and_files_alt(context, list_title):

@@ -1,4 +1,4 @@
-from office365.sharepoint.file_creation_information import FileCreationInformation
+from spoklient.sharepoint.file_creation_information import FileCreationInformation
 
 
 class ListExtensions(object):

@@ -1,9 +1,9 @@
 import os
 
-from office365.sharepoint.file import File
-from office365.sharepoint.list_creation_information import ListCreationInformation
-from office365.sharepoint.list_template_type import ListTemplateType
-from office365.sharepoint.template_file_type import TemplateFileType
+from spoklient.sharepoint.file import File
+from spoklient.sharepoint.list_creation_information import ListCreationInformation
+from spoklient.sharepoint.list_template_type import ListTemplateType
+from spoklient.sharepoint.template_file_type import TemplateFileType
 from tests import random_seed
 from tests.sharepoint_case import SPTestCase
 from tests.test_utilities import ListExtensions, FileExtensions, read_file_as_binary, read_file_as_text, \

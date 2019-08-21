@@ -1,8 +1,8 @@
 import os.path
 
-from office365.sharepoint.attachmentfile_creation_information import AttachmentfileCreationInformation
-from office365.sharepoint.list_creation_information import ListCreationInformation
-from office365.sharepoint.list_template_type import ListTemplateType
+from spoklient.sharepoint.attachmentfile_creation_information import AttachmentfileCreationInformation
+from spoklient.sharepoint.list_creation_information import ListCreationInformation
+from spoklient.sharepoint.list_template_type import ListTemplateType
 from tests.sharepoint_case import SPTestCase
 from tests.test_utilities import ListExtensions, read_file_as_binary
 

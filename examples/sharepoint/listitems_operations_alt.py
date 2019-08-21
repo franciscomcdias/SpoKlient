@@ -1,11 +1,11 @@
 import json
 
-from office365.sharepoint.client_context import ClientContext
+from spoklient.sharepoint.client_context import ClientContext
 from settings import settings
-from office365.runtime.auth.authentication_context import AuthenticationContext
-from office365.runtime.client_request import ClientRequest
-from office365.runtime.utilities.http_method import HttpMethod
-from office365.runtime.utilities.request_options import RequestOptions
+from spoklient.runtime.auth.authentication_context import AuthenticationContext
+from spoklient.runtime.client_request import ClientRequest
+from spoklient.runtime.utilities.http_method import HttpMethod
+from spoklient.runtime.utilities.request_options import RequestOptions
 
 
 def read_list_items(context, list_title, url):

@@ -1,6 +1,6 @@
 import os
 
-from office365.graph_client import GraphClient
+from spoklient.graph_client import GraphClient
 
 
 def get_token(auth_ctx):

@@ -1,6 +1,6 @@
 from settings import settings
-from office365.runtime.auth.authentication_context import AuthenticationContext
-from office365.sharepoint.client_context import ClientContext
+from spoklient.runtime.auth.authentication_context import AuthenticationContext
+from spoklient.sharepoint.client_context import ClientContext
 
 listTitle = "Tasks"
 

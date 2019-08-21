@@ -9,9 +9,9 @@ with open("README.md", "r") as fh:
     long_description = fh.read()
 
 setup(
-    name="Office365-REST-Python-Client",
-    version="2.1.3",
-    author="Vadim Gremyachev",
+    name="SpoKlient",
+    version="1.0.0",
+    author="Francisco Dias",
     author_email="vvgrem@gmail.com",
     maintainer="Konrad Gądek",
     maintainer_email="kgadek@gmail.com",
@@ -36,7 +36,7 @@ setup(
     ],
     packages=setuptools.find_packages(),
     package_data={
-        'office365': ["runtime/auth/SAML.xml"]
+        'spoklient': ["runtime/auth/SAML.xml"]
     }
 )
 

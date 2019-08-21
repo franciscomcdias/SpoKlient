@@ -2,7 +2,7 @@ import json
 import os
 from unittest import TestCase
 
-from office365.graph_client import GraphClient
+from spoklient.graph_client import GraphClient
 from settings import settings
 
 

@@ -1,7 +1,7 @@
 from unittest import TestCase
 from settings import settings
-from office365.outlookservices.outlook_client import OutlookClient
-from office365.runtime.auth.authentication_context import AuthenticationContext
+from spoklient.outlookservices.outlook_client import OutlookClient
+from spoklient.runtime.auth.authentication_context import AuthenticationContext
 
 
 class OutlookClientTestCase(TestCase):

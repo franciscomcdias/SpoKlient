@@ -1,7 +1,7 @@
 from settings import settings
-from office365.runtime.auth.authentication_context import AuthenticationContext
-from office365.sharepoint.caml_query import CamlQuery
-from office365.sharepoint.client_context import ClientContext
+from spoklient.runtime.auth.authentication_context import AuthenticationContext
+from spoklient.sharepoint.caml_query import CamlQuery
+from spoklient.sharepoint.client_context import ClientContext
 
 list_title = "Survey"
 view_title = "All Responses"
