@@ -78,7 +78,7 @@ class Klient:
         self.context.execute_query()
         for cur_file in files:
             _url = cur_file.properties["ServerRelativeUrl"]
-            if not filter_extensions or _url[:3] in filter_extensions:
+            if not filter_extensions or _url.split(".")[-1] in filter_extensions:
                 yield cur_file, cur_file.properties["ServerRelativeUrl"]
 
     def list_files_folders_recurs(self, folder):
@@ -101,3 +101,26 @@ class Klient:
         """
         response = File.open_binary(self.context, relative_url)
         return response.content
+
+    def get_metadata(self, item):
+        """
+        Gets the metadata for an item in a Library
+        :param item: ListItem
+        :return:
+        """
+        allfields = item.listitem_allfields
+        self.context.load(allfields)
+        self.context.execute_query()
+        return allfields.properties
+
+    def set_metadata(self, item, key, value):
+        """
+        Sets the value for metadata of an item
+        :param item: ListItem
+        :param key: Name of the property
+        :param value: Value for the property
+        :return:
+        """
+        item.set_property(key, value)
+        item.update()
+        item.context.execute_query()
